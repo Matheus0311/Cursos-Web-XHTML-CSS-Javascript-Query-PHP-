@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd.">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Javascript Aula 17</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!-- <link rel="stylesheet" type="text/css" href="css/imc.css" media="all"/> -->
+		
+		<style>
+			body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 20px;
+			}
+
+			h2 {
+				color: #333;
+				font-size: 24px;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			div {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 20px;
+			}
+
+			img {
+				width: 150px;
+				margin: 0 10px;
+			}
+
+			p {
+				color: #666;
+				line-height: 1.5;
+			}
+
+			form {
+				margin-top: 20px;
+				
+			}
+
+			fieldset {
+				border: none;
+				margin-bottom: 10px;
+			}
+
+			legend {
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+			}
+
+			input[type="text"],
+			select {
+				width: 100%;
+				padding: 5px;
+				margin-bottom: 10px;
+			}
+
+			button {
+				padding: 10px 20px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				display: inline-block;
+			}
+
+			button#executar {
+				background-color: #f39c12;
+				margin-right: 10px;
+			}
+
+			button#remover {
+				background-color: #e74c3c;
+			}
+		</style>
+	
+	</head>
+	<body>
+	
+		<h2 id="tit_id" name="tit_name" class="tit_class">DOM API</h2>
+		
+		<div>
+		
+			<img src="img/cadeira.png" alt="disponível"/>
+			<img src="img/cadeira_indisponivel.png" alt="indisponível"/>
+			<img src="img/cadeira_selecionada.png" alt="selecionada"/>
+		
+		</div>
+		
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisi enim, accumsan eu lorem non, pretium auctor nisl. Aenean nec risus orci. Phasellus fermentum orci vitae tortor fermentum posuere. Suspendisse rhoncus, sem ac ornare efficitur, eros tellus bibendum lectus, nec efficitur purus diam ac orci. Nullam nulla quam, suscipit sit amet odio non, venenatis tempor quam. Nunc vel arcu ullamcorper, dignissim purus vitae, lobortis mauris. Suspendisse ac risus quis dolor consectetur eleifend vel sit amet quam. Morbi et tortor neque. Cras quis ornare urna. Etiam dignissim nisl magna.
+		</p>
+		
+		<table>
+			<tr>
+				<td>Atributo</td>
+				<td>Valor</td>
+			<tr>
+		
+		</table>
+		
+		<button id="atributo">Atributo</button>
+		<button id="valor">Valor</button>
+		
+		<form>
+			<fieldset>
+				<legend>Formulário</legend>
+				
+					<label for="nome">Nome</label>
+					<input type="text" id="nome">
+					<label for="estado">Estado</label>
+						<select id="estado">
+							<option value="SP">São Paulo</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="PR">Paraná</option>
+						</select>
+			</fieldset>
+			
+			<button id="executar">Executar Javascript</button>
+			<button id="remover">Remover Linha</button>
+		</form>
+			
+	
+	</body>
+	<script type="text/javascript" src="js/aula17.js"></script>
+</html>

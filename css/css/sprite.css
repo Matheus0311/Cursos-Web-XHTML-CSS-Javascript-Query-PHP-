@@ -1,0 +1,18 @@
+.email{
+	background-image:url(../imagens/sprite.png);
+	width:55px;
+	height:55px;
+	background-position: -526px -395px;	
+}
+.busca{
+	background-image:url(../imagens/sprite.png);
+	width:55px;
+	height:55px;
+	background-position: -125px -9px;	
+}
+.edita{
+	background-image:url(../imagens/sprite.png);
+	width:55px;
+	height:55px;
+	background-position: -134px -198px;	
+}

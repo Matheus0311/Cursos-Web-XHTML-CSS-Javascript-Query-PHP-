@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd.">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Javascript IMC</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/imc.css" media="all"/>
+		<script type="text/javascript" src="js/imc.js"></script>
+	
+	</head>
+	<body>
+	
+		<img id="imc" src="img/img.png"/>
+		
+		<form id="formulario">
+		
+			<fieldset>
+				<legend>Cálculo de IMC</legend>
+				
+				<label for="peso">Peso em Kg:</label>
+				<input type="number" name="peso" />
+				
+				<label for="altura">Altura em Cm:</label>
+				<input type="number" name="altura" />
+				
+				<label for="imc">IMC:</label>
+				<input type="number" name="imc" disabled="disabled" />
+				
+				<label for="classificacao">Classificação:</label>
+				<input type="text" name="classificacao" disabled="disabled" />
+				
+				<a href="#" onclick="calcularIMC();">Calcular IMC</a>
+				
+			</fieldset>
+		</form>
+		
+	</body>
+</html>

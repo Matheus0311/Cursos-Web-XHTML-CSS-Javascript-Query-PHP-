@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Animations</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#calendario" ).datepicker({
+        dateFormat: 'dd/mm/yy',
+        closeText:"Fechar",
+        prevText:"&#x3C;Anterior",
+        nextText:"Próximo&#x3E;",
+        currentText:"Hoje",
+        monthNames: ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],
+        monthNamesShort:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],
+			dayNames:["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"],
+			dayNamesShort:["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],
+        dayNamesMin:["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],
+        weekHeader:"Sm",
+        firstDay:1
+    });
+});
+  </script>
+  <style>
+	body,
+input[type=text]{
+	color: #666;
+	font-family: verdana, arial, sans-serif;	
+}
+
+h1{font-size: 1.5em}
+h2{font-size: 1em}
+
+input[type=text]{
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	padding: 5px 8px;
+}
+</style>
+  
+</head>
+<body>
+ 
+<h1>CPF</h1>
+<input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');">
+
+<h1>CNPJ</h1>
+<input type="text" class="form-control" onkeypress="$(this).mask('00.000.000/0000-00')">
+
+<h1>CEP</h1>
+<input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')">
+
+<h1>Reais</h1>
+<input type="text" class="form-control" onkeypress="$(this).mask('R$ 999.990,00')">
+
+<h1>Telefone</h1>
+<input type="text" class="form-control" onkeypress="$(this).mask('(00) 90000-0000')">
+
+<h1>Data</h1>
+<input type="text" class="form-control" onkeypress="$(this).mask('00/00/0000')">
+
+
+
+<!-- <p>Clique dentro do campo e escolha a data</p>    
+<form action="">
+	<input id="calendario" name="calendario" type="text">
+</form>
+<p>Animations:<br>
+  <select id="anim">
+    <option value="show">Show (default)</option>
+    <option value="slideDown">Slide down</option>
+    <option value="fadeIn">Fade in</option>
+    <option value="blind">Blind (UI Effect)</option>
+    <option value="bounce">Bounce (UI Effect)</option>
+    <option value="clip">Clip (UI Effect)</option>
+    <option value="drop">Drop (UI Effect)</option>
+    <option value="fold">Fold (UI Effect)</option>
+    <option value="slide">Slide (UI Effect)</option>
+    <option value>None</option>
+  </select>
+</p> -->
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{ 
+	background-color:#DDDDDD;
+}
+#imc{ 
+	display:block; 
+	width:100px;
+	height:100px;
+	margin:50px auto;
+
+}
+form{
+	width: 400px;
+	height: 200px;
+	margin:50px auto;
+}
+
+fieldset{
+	
+    width: 100px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+label{
+	padding-top:10px;
+	padding-bottom: 10px
+}
+
+a{
+	display:block;
+	width: 100px;
+	margin: 20px auto;
+	
+}
+
+a {
+   background: #3D94F6;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #C0D6DF;
+   font-family: Brush Script MT;
+   font-size: 12px;
+   font-weight: 100;
+   padding: 10px;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   cursor: pointer;
+   text-align: center;
+}
+
+a:hover {
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+

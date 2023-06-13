@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd.">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Javascript Aula 03</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+		<style type="text/css">
+			body{ 
+				background-color:#DDDDDD;
+			}
+			#xti{ 
+				display:block; 
+				margin:0px auto;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			
+			function ligar(){
+				document.getElementById("xti").src="img/lampada-acesa.png";
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+	
+		<img id="xti" onclick="ligar();" src="img/lampada-apagada.png"/>
+		
+	</body>
+</html>

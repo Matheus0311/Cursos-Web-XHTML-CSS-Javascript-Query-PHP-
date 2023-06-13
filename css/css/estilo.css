@@ -1,0 +1,256 @@
+/* Seletores Simples*/
+/*
+*{ 
+	color: #00296b;
+}
+
+p{
+	color:#d00000;
+}
+
+.destaque{
+	color: #00bbf9;
+}
+
+.detalhe{
+	text-decoration:underline;
+}
+
+#introducao{
+	background-color: #fdc500;
+}
+
+em[title~=Empresa]{
+	color: #548c2f;
+	font-size: 40px;
+}
+*/
+
+
+/*Seletores Compostos*/
+
+/*Seletor descendente*/
+/* div em{
+	color: red;
+} */
+
+/*Seletor filho*/
+/* div > em{
+	text-decoration:underline;
+} */
+
+/*Seletor irmãos adjacentes*/
+/* p + p{
+	color:blue;
+} */
+
+/*Seletor imrãos adjacentes*/
+/* p + h2{
+	text-decoration:underline;
+} */
+
+/* div h1:first-child{
+	color:blue;
+} */
+
+
+/* links */
+/* a:link{
+	color:red;
+}
+
+a:visited{
+	color:green;
+} */
+
+
+/*Pseudo Classes*/
+/* input[type="text"]:focus{
+	background-color: red;
+}
+
+input[type="text"]:hover{
+	background-color: yellow;
+}
+
+a:active{
+	color:green;
+}
+
+a:lang(en){
+	color:gray;
+} */
+
+/* p:first-line{
+	color:blue;
+}
+
+p:first-letter{
+	font-size:40px;
+	color:red;
+}
+
+p:before{
+	content:" Ínicio - ";
+}
+
+p:after{
+	content:" - FIM";
+} */
+
+/* div{
+	transition: 0.3s;
+}
+
+div:hover{
+	color: #ff7d00;
+} */
+
+/* div>p{
+	color:red;
+}
+p{
+	color:#0000FF !important;
+}
+/*
+/* Importância
+a. Inline 
+b. IDs
+c. Classes, pseudoclasses, atributos
+d. elementos e pseudoelementos
+*/
+
+/* p{
+	margin: 30px 40px 20px;
+	padding: 10px 20px;
+	border: 5px dashed red;
+	border-width: 5px;
+	border-color: cyan;
+	border-style: outset;
+	solid, ridge, dotted, dashed, double, inset, outset
+} */
+
+/* 
+*{
+	font-size:10px;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2{
+	font-size: 1.3em;
+}
+
+p{
+	font-size: 1.2em;
+} 
+
+h1{
+	font-size: 400%;
+}
+h2{
+	font-size: 200%;
+}
+*/
+
+/* p{
+	font-family: Helvetica;
+	font-style: inherit;
+	font-weight: 900;
+	font-variant: small-caps;
+	font-size: 20px; 
+	
+	style font-vaiant font-weight font-size font-famiy
+	font: italic small-caps bold 20px verdana;
+} */
+
+/* p{
+	letter-spacing: 2px;
+	word-spacing: 10px;
+	line-height: 2;
+	text-align:justify;
+	text-indent: 1.25cm;
+	text-decoration: underline;
+	text-transform: capitalize;
+	margin: 10px;
+} 
+
+h1, h2{
+	text-align: center;
+	margin: 10px;
+}
+
+body{
+	background-color: yellow;
+	background-size: 100% 100%;
+}
+
+#model{
+	width:320px;
+	height;320px;
+	border: 2px solid black;
+	color: white;
+	
+	background-color: yellow;
+	background-size: 100% 100%;
+	
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+	background-image:url("https://sharecare.com.br/wp-content/uploads/2021/08/sharecare_sharecare_image_368.jpeg");
+} */
+
+h1{
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	background-color:#cccccc;
+	border-left: 10px solid black;
+	padding-left: 15px;
+	padding-bottom: 20px;
+	margin:0;
+	text-align: center;
+	
+	background-image:url("imagens/google.png");
+	background-position: center left 10px;
+	background-size: 50px;
+	background-repeat:no-repeat;
+
+}
+
+p::first-letter{
+	font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+/* a{
+	text-decoration:none;
+	color:#000;
+	background-color: #DDDDDD;
+	border:1px solid black;
+	width: 90px;
+	margin-bottom: 5px;
+	padding: 5px;
+	line-height: 1.5;
+	transition: 0.5s;
+
+}
+a:hover{
+	text-decoration:underline;
+	color: #DDDDDD;
+	background-color: #000;
+}
+ */
+ 
+/*  a[href^="https:"]{
+	background-image:url(imagens/google.png) no-repeat right top;
+	padding-right:15px;
+ } */
+ 
+/* ul{
+	 list-style-type: none;
+	 list-style-image: url('../imagens/seta.png');
+	 list-style-position: inside;
+	 
+ }  */

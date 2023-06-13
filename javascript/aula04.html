@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd.">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Javascript Aula 04</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+		<style type="text/css">
+			body{ 
+				background-color:#DDDDDD;
+			}
+			#xti{ 
+				display:block; 
+				margin:0px auto;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			
+			function ligar(){
+			
+				var nome = "\u7231 \"Matheus\"\\";
+				var idade = 21;
+				var casado = false;
+				var doido = 1.93832198383928292e+308; //Infinity
+				
+				const HORAS_DO_DIA = 24;
+				
+				alert(nome  + " \n" + idade  + " \n" + casado + " \n" + doido);
+			
+				document.getElementById("xti").src="img/lampada-acesa.png";
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+	
+		<img id="xti" onclick="ligar();" src="img/lampada-apagada.png"/>
+		
+	</body>
+</html>

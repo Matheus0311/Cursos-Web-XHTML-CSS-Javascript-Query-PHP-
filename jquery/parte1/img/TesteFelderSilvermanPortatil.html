@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teste de Felder e Silverman</title>
+<style type="text/css">
+	body{
+		background-color:#FFF;
+	}
+	
+	#resultado{
+		//background-color:#FF1;
+		//display: none;
+	}
+	
+	.ocultar {
+		display: none;
+	}
+	
+	.mostrarbloco {
+		display: block;
+	}
+	
+	.mostrarlinha {
+		display: inline;
+	}
+	
+	.testegrafico1{
+		background-color: black;
+	}
+	
+	.testegrafico{
+		background-color: red;
+	}
+</style>
+
+<script type="text/javascript" charset="UTF-8">
+	$ativo=0;
+	$reflexivo=0;
+	$sensitivo=0;
+	$intuitivo=0;
+	$visual=0;
+	$verbal=0;
+	$sequencial=0;
+	$global=0;
+	
+	
+	function motraresultado() {
+		$ativo=$reflexivo=$sensitivo=$intuitivo=$visual=$verbal=$sequencial=$global=0;
+		document.getElementById('resultado').style.cssText = 'display: inline;';
+		document.getElementById('questionario').style.cssText = 'display: none;';
+		
+		//Soma os Resultados
+		if(document.getElementById('radio01').checked) $ativo+=1;
+		if(document.getElementById('radio02').checked) $reflexivo+=1;
+		if(document.getElementById('radio03').checked) $sensitivo+=1;
+		if(document.getElementById('radio04').checked) $intuitivo+=1;
+		if(document.getElementById('radio05').checked) $visual+=1;
+		if(document.getElementById('radio06').checked) $verbal+=1;
+		if(document.getElementById('radio07').checked) $sequencial+=1;
+		if(document.getElementById('radio08').checked) $global+=1;
+		if(document.getElementById('radio09').checked) $ativo+=1;
+		if(document.getElementById('radio10').checked) $reflexivo+=1;
+		if(document.getElementById('radio11').checked) $sensitivo+=1;
+		if(document.getElementById('radio12').checked) $intuitivo+=1;
+		if(document.getElementById('radio13').checked) $visual+=1;
+		if(document.getElementById('radio14').checked) $verbal+=1;
+		if(document.getElementById('radio15').checked) $sequencial+=1;
+		if(document.getElementById('radio16').checked) $global+=1;
+		if(document.getElementById('radio17').checked) $ativo+=1;
+		if(document.getElementById('radio18').checked) $reflexivo+=1;
+		if(document.getElementById('radio19').checked) $sensitivo+=1;
+		if(document.getElementById('radio20').checked) $intuitivo+=1;
+		if(document.getElementById('radio21').checked) $visual+=1;
+		if(document.getElementById('radio22').checked) $verbal+=1;
+		if(document.getElementById('radio23').checked) $sequencial+=1;
+		if(document.getElementById('radio24').checked) $global+=1;
+		if(document.getElementById('radio25').checked) $ativo+=1;
+		if(document.getElementById('radio26').checked) $reflexivo+=1;
+		if(document.getElementById('radio27').checked) $sensitivo+=1;
+		if(document.getElementById('radio28').checked) $intuitivo+=1;
+		if(document.getElementById('radio29').checked) $visual+=1;
+		if(document.getElementById('radio30').checked) $verbal+=1;
+		if(document.getElementById('radio31').checked) $sequencial+=1;
+		if(document.getElementById('radio32').checked) $global+=1;
+		if(document.getElementById('radio33').checked) $ativo+=1;
+		if(document.getElementById('radio34').checked) $reflexivo+=1;
+		if(document.getElementById('radio35').checked) $sensitivo+=1;
+		if(document.getElementById('radio36').checked) $intuitivo+=1;
+		if(document.getElementById('radio37').checked) $visual+=1;
+		if(document.getElementById('radio38').checked) $verbal+=1;
+		if(document.getElementById('radio39').checked) $sequencial+=1;
+		if(document.getElementById('radio40').checked) $global+=1;
+		if(document.getElementById('radio41').checked) $ativo+=1;
+		if(document.getElementById('radio42').checked) $reflexivo+=1;
+		if(document.getElementById('radio43').checked) $sensitivo+=1;
+		if(document.getElementById('radio44').checked) $intuitivo+=1;
+		if(document.getElementById('radio45').checked) $visual+=1;
+		if(document.getElementById('radio46').checked) $verbal+=1;
+		if(document.getElementById('radio47').checked) $sequencial+=1;
+		if(document.getElementById('radio48').checked) $global+=1;
+		if(document.getElementById('radio49').checked) $ativo+=1;
+		if(document.getElementById('radio50').checked) $reflexivo+=1;
+		if(document.getElementById('radio51').checked) $sensitivo+=1;
+		if(document.getElementById('radio52').checked) $intuitivo+=1;
+		if(document.getElementById('radio53').checked) $visual+=1;
+		if(document.getElementById('radio54').checked) $verbal+=1;
+		if(document.getElementById('radio55').checked) $sequencial+=1;
+		if(document.getElementById('radio56').checked) $global+=1;
+		if(document.getElementById('radio57').checked) $ativo+=1;
+		if(document.getElementById('radio58').checked) $reflexivo+=1;
+		if(document.getElementById('radio59').checked) $sensitivo+=1;
+		if(document.getElementById('radio60').checked) $intuitivo+=1;
+		if(document.getElementById('radio61').checked) $visual+=1;
+		if(document.getElementById('radio62').checked) $verbal+=1;
+		if(document.getElementById('radio63').checked) $sequencial+=1;
+		if(document.getElementById('radio64').checked) $global+=1;
+		if(document.getElementById('radio65').checked) $ativo+=1;
+		if(document.getElementById('radio66').checked) $reflexivo+=1;
+		if(document.getElementById('radio67').checked) $sensitivo+=1;
+		if(document.getElementById('radio68').checked) $intuitivo+=1;
+		if(document.getElementById('radio69').checked) $visual+=1;
+		if(document.getElementById('radio70').checked) $verbal+=1;
+		if(document.getElementById('radio71').checked) $sequencial+=1;
+		if(document.getElementById('radio72').checked) $global+=1;
+		if(document.getElementById('radio73').checked) $ativo+=1;
+		if(document.getElementById('radio74').checked) $reflexivo+=1;
+		if(document.getElementById('radio75').checked) $sensitivo+=1;
+		if(document.getElementById('radio76').checked) $intuitivo+=1;
+		if(document.getElementById('radio77').checked) $visual+=1;
+		if(document.getElementById('radio78').checked) $verbal+=1;
+		if(document.getElementById('radio79').checked) $sequencial+=1;
+		if(document.getElementById('radio80').checked) $global+=1;
+		if(document.getElementById('radio81').checked) $ativo+=1;
+		if(document.getElementById('radio82').checked) $reflexivo+=1;
+		if(document.getElementById('radio83').checked) $sensitivo+=1;
+		if(document.getElementById('radio84').checked) $intuitivo+=1;
+		if(document.getElementById('radio85').checked) $visual+=1;
+		if(document.getElementById('radio86').checked) $verbal+=1;
+		if(document.getElementById('radio87').checked) $sequencial+=1;
+		if(document.getElementById('radio88').checked) $global+=1;
+		//alert('Ativo: '+$ativo+'\nReflexivo: '+$reflexivo+'\nSensitivo: '+$sensitivo+'\nIntuitivo: '+$intuitivo+'\nVisual: '+$visual+'\nVerbal: '+$verbal+'\nSequencial: '+$sequencial+'\nGlobal: '+$global);
+		//Fim da Soma
+		document.getElementById('TotalAtivo').innerText=' ( '+parseFloat(($ativo*100/11).toFixed(2))+'% ) ';
+		document.getElementById('TotalReflexivo').innerText=' ( '+parseFloat(($reflexivo*100/11).toFixed(2))+'% ) ';
+		document.getElementById('TotalSensitivo').innerText=' ( '+parseFloat(($sensitivo*100/11).toFixed(2))+'% ) ';
+		document.getElementById('TotalIntuitivo').innerText=' ( '+parseFloat(($intuitivo*100/11).toFixed(2))+'% ) ';
+		document.getElementById('TotalVisual').innerText=' ( '+parseFloat(($visual*100/11).toFixed(2))+'% ) ';
+		document.getElementById('TotalVerbal').innerText=' ( '+parseFloat(($verbal*100/11).toFixed(2))+'% ) ';
+		document.getElementById('TotalSequencial').innerText=' ( '+parseFloat(($sequencial*100/11).toFixed(2))+'% ) ';
+		document.getElementById('TotalGlobal').innerText=' ( '+parseFloat(($global*100/11).toFixed(2))+'% ) ';
+		//Desenha gráficos
+		document.getElementById('ativoreflexivo').innerText='.';
+		document.getElementById('ativoreflexivo').style.width = $ativo*100/11+'%';
+		document.getElementById('sensitivointuitivo').innerText='.';
+		document.getElementById('sensitivointuitivo').style.width = $sensitivo*100/11+'%';
+		document.getElementById('visualverbal').innerText='.';
+		document.getElementById('visualverbal').style.width = $visual*100/11+'%';
+		document.getElementById('sequancialglobal').innerText='.';
+		document.getElementById('sequancialglobal').style.width = $sequencial*100/11+'%';
+	}
+	
+	function motraquestionario() {
+		document.getElementById('resultado').style.cssText = 'display: none;';
+		document.getElementById('questionario').style.cssText = 'display: inline;';
+	}
+	
+	function mostradetalhes() {
+		document.getElementById('detalhes').style.cssText = 'display: inline;';
+		document.getElementById('BotaoMostrarDetalhes').style.cssText = 'display: none;';
+		document.getElementById('BotaoOcultarDetalhes').style.cssText = 'display: inline;';
+	}
+	
+	
+	function ocultadetalhes() {
+		document.getElementById('detalhes').style.cssText = 'display: none;';
+		document.getElementById('BotaoMostrarDetalhes').style.cssText = 'display: inline;';
+		document.getElementById('BotaoOcultarDetalhes').style.cssText = 'display: none;';
+	}
+	
+</script>
+
+</head>
+
+<body>
+
+<div id="questionario">
+<br>
+<strong>ÍNDICE DE ESTILOS DE APRENDIZAGEM DE FELDER-SILVERMAN</strong><br>
+<br>Instruções:
+<br>Marque &ldquo;a&rdquo; ou &ldquo;b&rdquo; para indicar a sua resposta.
+<br>Escolha somente uma resposta para cada pergunta.
+<br>Se ambas as opções se aplicarem a você, escolha aquela que é mais freqüente.
+<br><br>Perguntas:
+<form>
+<br>1. Eu compreendo melhor um assunto depois que:  
+<br><input type="radio" name="r01" id="radio01" value="a" required="required"/>
+a) experimento.  
+<br><input type="radio" name="r01" id="radio02" value="b" required="required" /> 
+b) penso sobre o mesmo.  
+<br><br>2. Eu prefiro ser considerado (a):  
+<br><input type="radio" name="r02" id="radio03" value="a" required="required" />
+a) uma pessoa realista.  
+<br><input type="radio" name="r02" id="radio04" value="b" required="required" />
+b) uma pessoa inovadora.
+<br><br>3. Quando eu penso o que fiz ontem, normalmente faço uso de:  
+<br><input type="radio" name="r03" id="radio05" value="a" required="required" />
+a) uma gravura.  
+<br><input type="radio" name="r03" id="radio06" value="b" required="required" />
+b) palavra.
+<br><br>4. Tenho tendência a...  
+<br><input type="radio" name="r04" id="radio07" value="a" required="required" />
+a) compreender detalhes de um assunto, mas fico confuso(a) em relação à sua  estrutura geral.  
+<br><input type="radio" name="r04" id="radio08" value="b" required="required" />
+b) compreender a estrutura geral, mas me confundo com os detalhes.  
+<br><br>5. Quando estou aprendendo algo novo, ajuda-me muito:  
+<br><input type="radio" name="r05" id="radio09" value="a" required="required" />
+a) falar sobre o assunto.  
+<br><input type="radio" name="r05" id="radio10" value="b" required="required" />
+b) pensar sobre o assunto.  
+<br><br>6. Se eu fosse professor(a), eu preferiria dar um curso que:  
+<br><input type="radio" name="r06" id="radio11" value="a" required="required" />
+a) lidasse com fatos e situações reais.  
+<br><input type="radio" name="r06" id="radio12" value="b" required="required" />
+b) lidasse com idéias e teorias.  
+<br><br>7. Para obter informações novas eu prefiro:  
+<br><input type="radio" name="r07" id="radio13" value="a" required="required" />
+a) diagramas, gráficos ou mapas.  
+<br><input type="radio" name="r07" id="radio14" value="b" required="required" />
+b) instruções escritas ou dados verbais.  
+<br><br>8. Assim que compreendo:  
+<br><input type="radio" name="r08" id="radio15" value="a" required="required" />
+a) todas as partes, eu compreendo o todo.  
+<br><input type="radio" name="r08" id="radio16" value="b" required="required" />
+b) o todo, eu consigo visualizar as partes. 
+<br><br>9. Em um grupo de estudos, trabalhando com um material difícil, possivelmente:  
+<br><input type="radio" name="r09" id="radio17" value="a" required="required" />
+a) me envolvo e contribuo com idéias.  
+<br><input type="radio" name="r09" id="radio18" value="b" required="required" />
+b) me sento e escuto a discussão.  
+<br><br>10. Acho que é mais fácil:  
+<br><input type="radio" name="r10" id="radio19" value="a" required="required" />
+a) aprender os fatos.  
+<br><input type="radio" name="r10" id="radio20" value="b" required="required" />
+b) aprender os conceitos.  
+<br><br>11. Em um livro que tenha gravuras e quadros, normalmente:  
+<br><input type="radio" name="r11" id="radio21" value="a" required="required" />
+a) verifico as gravuras e quadros cuidadosamente.  
+<br><input type="radio" name="r11" id="radio22" value="b" required="required" />
+b) presto atenção ao texto escrito.  
+<br><br>12. Quando resolvo problemas de matemática:  
+<br><input type="radio" name="r12" id="radio23" value="a" required="required" />
+a) normalmente os soluciono passo-a-passo.  
+<br><input type="radio" name="r12" id="radio24" value="b" required="required" />
+b) freqüentemente só visualizo os resultados, e sinto dificuldades para entender  seus passos.  
+<br><br>13. Nas aulas que freqüentei:  
+<br><input type="radio" name="r13" id="radio25" value="a" required="required" />
+a) normalmente fiz amizades com muitos alunos.  
+<br><input type="radio" name="r13" id="radio26" value="b" required="required" />
+b) raramente fiz amizade com muitos alunos.  
+<br><br>14. Em leituras que não são de ficção, prefiro:  
+<br><input type="radio" name="r14" id="radio27" value="a" required="required" />
+a) aquelas que me ensinam fatos novos ou que me digam como fazer algo.  
+<br><input type="radio" name="r14" id="radio28" value="b" required="required" />
+b) aquelas que me despertam novas idéias.  
+<br><br>15. Gosto dos professores:  
+<br><input type="radio" name="r15" id="radio29" value="a" required="required" />
+a) que colocam diagramas no quadro.  
+<br><input type="radio" name="r15" id="radio30" value="b" required="required" />
+b) que passam muito tempo explicando.  
+<br><br>16. Quando estou analisando uma história ou novela:  
+<br><input type="radio" name="r16" id="radio31" value="a" required="required" />
+a) eu penso nos incidente se tento uni-los para compreender os temas.  
+<br><input type="radio" name="r16" id="radio32" value="b" required="required" />
+b) somente sei quais são os temas quando termino de ler e, então , tenho que voltar  à leitura para encontrar os incidentes que os apontam.  
+<br><br>17. Quando começo a resolver um problema dado como de casa, normalmente:  
+<br><input type="radio" name="r17" id="radio33" value="a" required="required" />
+a) começo a trabalhar imediatamente para encontrar a solução.  
+<br><input type="radio" name="r17" id="radio34" value="b" required="required" />
+b) tento compreender todo o problema primeiro.
+
+<br><br>18. Prefiro a idéia da:  
+<br><input type="radio" name="r18" id="radio35" value="a" required="required" />
+a) certeza.  
+<br><input type="radio" name="r18" id="radio36" value="b" required="required" />
+b) teoria.
+
+<br><br>19. Lembro-me melhor:  
+<br><input type="radio" name="r19" id="radio37" value="a" required="required" />
+a) daquilo que vejo.<br>
+<input type="radio" name="r19" id="radio38" value="b" required="required" />
+b) daquilo que ouço.
+
+<br><br>20. É mais importante para mim que o professor ou o instrutor:  
+<br><input type="radio" name="r20" id="radio39" value="a" required="required" />
+a) apresente todo o material de maneira seqüencial e clara.  
+<br><input type="radio" name="r20" id="radio40" value="b" required="required" />
+b) ofereça-me um quadro geral e relacione o material a outros assuntos.
+<br><br>21. Prefiro estudar:  
+<br><input type="radio" name="r21" id="radio41" value="a" required="required" />
+a) em grupo.  
+<br><input type="radio" name="r21" id="radio42" value="b" required="required" />
+b) sozinho (a).  
+<br><br>22. Prefiro que me considerem como alguém que é:  
+<br><input type="radio" name="r22" id="radio43" value="a" required="required" />
+a) minucioso (a) com o meu trabalho.  
+<br><input type="radio" name="r22" id="radio44" value="b" required="required" />
+b) criativo (a) com o meu trabalho.  
+<br><br>23. Quando necessito de instruções para ir a um local desconhecido, prefiro:  
+<br><input type="radio" name="r23" id="radio45" value="a" required="required" />
+a) um mapa  
+<br><input type="radio" name="r23" id="radio46" value="b" required="required" />
+b) instruções escritas.  
+<br><br>24. Eu aprendo:  
+<br><input type="radio" name="r24" id="radio47" value="a" required="required" />
+a) em ritmo regular. Se estudar muito, vou entender tudo.  
+<br><input type="radio" name="r24" id="radio48" value="b" required="required" />
+b) &ldquo;aos trancos e barrancos&rdquo;. Fico totalmente confuso (a). De repente, tudo se  encaixa.  
+<br><br>25. Primeiramente eu prefiro:  
+<br><input type="radio" name="r25" id="radio49" value="a" required="required" />
+a) experimentar as coisas.  
+<br><input type="radio" name="r25" id="radio50" value="b" required="required" />
+b) pensar em como vou fazê-la.  
+<br><br>26. Quando leio por prazer, gosto dos escritores que:  
+<br><input type="radio" name="r26" id="radio51" value="a" required="required" />
+a) dizem claramente o que desejam (usam um estilo direto).  
+<br><input type="radio" name="r26" id="radio52" value="b" required="required" />
+b) dizem as coisas de maneira criativa e interessante (usam um estilo mais  rebuscado).  
+<br><br>27. Quando vejo um diagrama ou um esboço em aula, geralmente me lembro mais  facilmente:  
+<br><input type="radio" name="r27" id="radio53" value="a" required="required" />
+a) das gravuras.  
+<br><input type="radio" name="r27" id="radio54" value="b" required="required" />
+b) daquilo que o professor disse.  
+<br><br>28. Ao considerar o corpo de uma informação, normalmente eu:  
+<br><input type="radio" name="r28" id="radio55" value="a" required="required" />
+a) presto atenção aos detalhes e ignoro a mensagem geral.  
+<br><input type="radio" name="r28" id="radio56" value="b" required="required" />
+b) tento compreender a mensagem geral antes de verificar os detlhes.  
+<br><br>29. Eu me lembro mais facilmente:  
+<br><input type="radio" name="r29" id="radio57" value="a" required="required" />
+a)daquilo que fiz.  
+<br><input type="radio" name="r29" id="radio58" value="b" required="required" />
+b) daquilo que pensei bastante a respeito.   
+<br><br>30. Quando tenho que desempenhar uma tarefa, prefiro:  
+<br><input type="radio" name="r30" id="radio59" value="a" required="required" />
+a) traçar uma maneira de executá-la.  
+<br><input type="radio" name="r30" id="radio60" value="b" required="required" />
+b) trazer jeitos novos de fazê-la.  
+<br><br>31. Quando alguém está me mostrando alguns dados, eu prefiro:  
+<br><input type="radio" name="r31" id="radio61" value="a" required="required" />
+a) tabelas e gráficos.  
+<br><input type="radio" name="r31" id="radio62" value="b" required="required" />
+b) textos que resumem os resultados.  
+<br><br>32. Quando estou escrevendo algum documento, normalmente:  
+<br><input type="radio" name="r32" id="radio63" value="a" required="required" />
+a) faço um trabalho (penso e escrevo) que vai do princípio ao fim progressivamente.  
+<br><input type="radio" name="r32" id="radio64" value="b" required="required" />
+b) faço um trabalho (penso e escrevo) que envolve diferentes partes do documento.  Só depois eu coloco em ordem.  
+<br><br>33. Quando tenho que trabalhar em um projeto de grupo, primeiramente eu desejo:  
+<br><input type="radio" name="r33" id="radio65" value="a" required="required" />
+a) fazer &ldquo;tempestade de idéias&rdquo; envolvendo todo o grupo para todos contribuírem  com idéias.  
+<br><input type="radio" name="r33" id="radio66" value="b" required="required" />
+b) fazer &ldquo;tempestade de idéias&rdquo; individual, para em seguida unir o grupo e compara-los.    
+<br><br>34. Eu considero elogio enorme chamar alguém de:  
+<br><input type="radio" name="r34" id="radio67" value="a" required="required" />
+a) sensível.  
+<br><input type="radio" name="r34" id="radio68" value="b" required="required" />
+b) imaginativo.  
+<br><br>35. Quando encontro as pessoas em uma festa, lembro-me mais facilmente:  
+<br><input type="radio" name="r35" id="radio69" value="a" required="required" />
+a) de como elas eram.  
+<br><input type="radio" name="r35" id="radio70" value="b" required="required" />
+b) do que disseram sobre si mesmas.  
+<br><br>36. Quando estou aprendendo uma matéria nova, eu prefiro:  
+<br><input type="radio" name="r36" id="radio71" value="a" required="required" />
+a) concentrar-me no assunto, aprendendo o máximo que eu puder.  
+<br><input type="radio" name="r36" id="radio72" value="b" required="required" />
+b) tentar fazer conexões entre aquele assunto e outros que estejam relacionados.  
+<br><br>37. Prefiro que me considerem:  
+<br><input type="radio" name="r37" id="radio73" value="a" required="required" />
+a) extrovertido (a).  
+<br><input type="radio" name="r37" id="radio74" value="b" required="required" />
+b) reservado (a).  
+<br><br>38. Prefiro cursos que enfatizem o:  
+<br><input type="radio" name="r38" id="radio75" value="a" required="required" />
+a) material concreto (fatos, dados).  
+<br><input type="radio" name="r38" id="radio76" value="b" required="required" />
+b) material abstrato (conceitos, teorias).  
+<br><br>39. Para o lazer, eu prefiro:  
+<br><input type="radio" name="r39" id="radio77" value="a" required="required" />
+a) assistir à televisão.  
+<br><input type="radio" name="r39" id="radio78" value="b" required="required" />
+b) ler um livro.   
+<br><br>40. Alguns professores começam a sua aula com um esboço sobre o que vão expor,  que são:  
+<br><input type="radio" name="r40" id="radio79" value="a" required="required" />
+a) de certa forma útil para mim.  
+<br><input type="radio" name="r40" id="radio80" value="b" required="required" />
+b) muito úteis para mim.  
+<br><br>41. A idéia de fazer o dever de casa em grupo, com uma nota para o grupo inteiro:  
+<br><input type="radio" name="r41" id="radio81" value="a" required="required" />
+a) me atrai.  
+<br><input type="radio" name="r41" id="radio82" value="b" required="required" />
+b) não me atrai.  
+<br><br>42. Quando estou fazendo cálculos longos:  
+<br><input type="radio" name="r42" id="radio83" value="a" required="required" />
+a) tenho a tendência de repetir todos os meus passos e verificar meu trabalho com  cuidado.  
+<br><input type="radio" name="r42" id="radio84" value="b" required="required" />
+b) acho que verificar o trabalho é algo cansativo e tenho que forçar para fazer isso.  
+<br><br>43. Tenho tendência a descrever os locais nos quais já estive:  
+<br><input type="radio" name="r43" id="radio85" value="a" required="required" />
+a) facilmente e como são.  
+<br><input type="radio" name="r43" id="radio86" value="b" required="required" />
+b) com dificuldade e sem muitos detalhes.  
+<br><br>44. Quando estou resolvendo problemas em grupo, muito provavelmente:
+<br><input type="radio" name="r44" id="radio87" value="a" required="required" />
+a) considero os passos do processo que levam à solução.  
+<br><input type="radio" name="r44" id="radio88" value="b" required="required" />
+b) considero as possíveis conseqüências ou aplicações da solução em diferentes  áreas. 
+
+</p>
+<p align="center">
+<button id="meuBotao" type="button" onclick="motraresultado()">Confirmar</button>
+<button>Limpar</button>
+</p>
+<form>
+
+</div>
+<div id="resultado" class='ocultar' align="center">
+<p><br>
+  <strong>ÍNDICE DE ESTILOS DE APRENDIZAGEM DE FELDER-SILVERMAN</strong><br>
+  <br>
+  <strong>Resultado:
+  </strong></p>
+<table border="0" cellpadding="10" cellspacing="5" frame="border" rules="all">
+  <tr>
+    <td width="200"><div align="center"><strong>Estilo</strong></div></td>
+    <td width="200"><div align="center"><strong>Proporção</strong></div></td>
+    <td width="200"><div align="center"><strong>Estilo</strong></div></td>
+  </tr>
+  <tr>
+    <td><div id="ativo2" align="center">Ativo<span id='TotalAtivo'></span></div></td>
+    <td><div class='testegrafico' ><div id='ativoreflexivo' class='testegrafico1'></div></div></td>
+    <td><div id="reflexivo2" align="center">Reflexivo<span id='TotalReflexivo'></span></div></td>
+  </tr>
+  <tr>
+    <td><div id="sensitivo2" align="center">Sensitivo<span id='TotalSensitivo'></span></div></td>
+    <td><div class='testegrafico' ><div id='sensitivointuitivo' class='testegrafico1'></div></div></td>
+    <td><div id="intuitivo2" align="center">Intuitivo<span id='TotalIntuitivo'></span></div></td>
+  </tr>
+  <tr>
+    <td><div id="visual2" align="center">Visual<span id='TotalVisual'></span></div></td>
+    <td><div class='testegrafico' ><div id='visualverbal' class='testegrafico1'></div></div></td>
+    <td><div id="verbal2" align="center">Verbal<span id='TotalVerbal'></span></div></td>
+  </tr>
+  <tr>
+    <td><div id="sequencial2" align="center">Sequencial<span id='TotalSequencial'></span></div></td>
+    <td><div class='testegrafico' ><div id='sequancialglobal' class='testegrafico1'></div></div></td>
+    <td><div id="global2" align="center">Global<span id='TotalGlobal'></span></div></td>
+  </tr>
+</table>
+<br>
+<div align="center"> <button id="BotaoMostrarDetalhes" type="button" onclick="mostradetalhes()">Motrar Detalhes</button>
+ <button id="BotaoOcultarDetalhes" type="button" onclick="ocultadetalhes()">Ocultar Detalhes</button></div>
+<br>
+<div id="detalhes" class='ocultar'>
+<table border="0" cellpadding="10" cellspacing="5" frame="border" rules="all">
+  <tr>
+    <td width="500"><div align="center"><strong>Estilo</strong></div></td>
+    <td width="500"><div align="center"><strong>Estilo</strong></div></td>
+    </tr>
+  <tr>
+    <td><div id="ativo" align="center">
+      <div align="left" class="estiloativo">
+        <strong >Estilo Ativo </strong><br>
+        <br>Característica Marcante:
+        <br>Aprendem melhor discutindo, explicando, ensinando a alguém. 
+        <br>Atividades:
+        <br>Propor Chats, Fóruns, Webconferências, Atividades em grupo;
+        <br>Conteúdo
+        <br>Texto: links, livros, apostilas;
+        <br>Imagens: Imagens e esquemas que sirvam de material para suas preleções;
+        <br>Ferramentas
+        <br>Chat, Fóruns, Webconferência, Glossários, Wikis;
+        <br>Estratégias:
+        <br>Professor deve propor atividades em grupo e seminários.
+        </div>
+      
+    </div></td>
+    <td><div id="reflexivo" align="center">
+      <div align="left" class="estiloreflexivo"> <strong >Estilo Reflexivo </strong><br />
+        <br />
+        Característica Marcante: <br />
+        Aprendem melhor quando tem oportunidade de refletir sobre o assunto. <br />
+        Atividades: <br />
+        Resumos, Reflexões nos Fóruns, Elaborar Mapas e Esquemas; <br />
+        Conteúdo <br />
+        Texto: links, livros, apostilas; <br />
+        Imagens: Vídeos e Fotos; <br />
+        Ferramentas <br />
+        Fóruns, Wikis, Editores de texto, CmapsTools; <br />
+        Estratégias: <br />
+        Professor deve promover paradas para reflexão sobre o conteúdo, Estimular a criação de resumos, mapas, esquemas. </div>
+    </div></td>
+    </tr>
+  <tr>
+    <td><div id="sensitivo" align="center">
+      <div align="left" class="estilosensitivo">
+        <strong >Estilo Sensitivo </strong><br>
+        <br>Característica Marcante:
+        <br>Aprendem melhor com fatos e trabalhos práticos. 
+        <br>Atividades:
+        <br>Propor Chats, Fóruns, Experimentos em Laboratório;
+        <br>Conteúdo
+        <br>Texto: links, livros, apostilas;
+        <br>Imagens: Vídeos e Fotos que apresentem a relação do conteúdo com a vida ou como o fenômeno acontece;
+        <br>Ferramentas
+        <br>Chat, Fóruns, Webconferência, Simulações;
+        <br>Estratégias:
+        <br>Professor deve propor a busca de exemplos no mundo real para ilustrar o conteúdo e se possível fazer simulações.
+        </div>
+    </div></td>
+    <td><div id="intuitivo" align="center">
+      <div align="left" class="estilointuitivo"> <strong >Estilo Intuitivo </strong><br />
+        <br />
+        Característica Marcante: <br />
+        Aprendem melhor descobrindo possibilidades e relações. <br />
+        Atividades: <br />
+        Propor Chats, Fóruns, Mapas Conceituais e Mentais; <br />
+        Conteúdo <br />
+        Texto: links, livros, apostilas; <br />
+        Imagens: imagens, mapas mentais e conceituais, esquemas, esboços; <br />
+        Ferramentas <br />
+        Chat, Fóruns, Webconferência, CmapsTools; <br />
+        Estratégias: <br />
+        Professor deve propor que alunos estabeleçam relações do novo conteúdo com o já aprendido inclusive em outras disciplinas. </div>
+    </div></td>
+    </tr>
+  <tr>
+    <td><div id="visual" align="center">
+      <div align="left" class="estilovisual">
+        <strong >Estilo Visual </strong><br>
+        <br>Característica Marcante:
+        <br>Lembram-se mais do que vêem do que ouvem ou lêem. 
+        <br>Atividades:
+        <br>Criação Mapas Mentais, Conceituais, Esquemas, Fluxogramas, Apresentações em pps;
+        <br>Conteúdo
+        <br>Texto: links, livros e apostilas;
+        <br>Imagens: Diagramas, Esquemas, Figuras;
+        <br>Ferramentas
+        <br>Editor de imagens, Impress / Powerpoint, Moviemaker, Youtube, SlideShare, CmapTools;
+        <br>Estratégias:
+        <br>Professor deve associar imagens, esquemas aos textos e vídeos para apresentações orais dos conteúdos.
+        </div>
+    </div></td>
+    <td><div id="verbal" align="center">
+      <div align="left" class="estiloverbal"> <strong >Estilo Verbal </strong><br />
+        <br />
+        Característica Marcante: <br />
+        Lembram-se mais do que lêem ou escutam do que vêem; <br />
+        Atividades: <br />
+        Participação em chats, fóruns, resumos escritos, assistir palestras em vídeos; <br />
+        Conteúdo <br />
+        Texto: links, livros, apostilas, vídeos; <br />
+        Ferramentas <br />
+        Chat, Webconferência, Fóruns, Editores de texto e de apresentação, sites de vídeos; <br />
+        Estratégias: <br />
+        Professor deve propor atividades de escrita e leitura de textos, debates nas ferramentas de comunicação síncrona e assíncrona, vídeos para apresentações orais dos conteúdos. </div>
+    </div></td>
+    </tr>
+  <tr>
+    <td><div id="sequencial" align="center">
+      <div align="left" class="estilosequencial">
+        <strong >Estilo Sequencial </strong><br>
+        <br>Característica Marcante:
+        <br>Aprendem melhor com os conteúdos ministrados de forma lógica e encadeada. 
+        <br>Atividades:
+        <br>Propor atividades de ordenação do conteúdo, Relacionar conteúdo novo ao já conhecido;
+        <br>Conteúdo
+        <br>Texto: links, Artigos, Capítulos;
+        <br>Imagens: Diagramas, Esquemas;
+        <br>Ferramentas
+        <br>Mapas Conceituais, Powerpoint;
+        <br>Estratégias:
+        <br>Professor deve planejar melhor o do conteúdo, criar momentos de revisão do conteúdo, Elaborar um bom material de apoio.
+        </div>
+    </div></td>
+    <td><div id="global" align="center">
+      <div align="left" class="estiloglobal"> <strong >Estilo Global </strong><br />
+        <br />
+        Característica Marcante: <br />
+        Lidam aleatoriamente com conteúdo e compreendem por inshgths. <br />
+        Atividades: <br />
+        Ler o material antes para ter uma idéia do conteúdo; <br />
+        Conteúdo <br />
+        Texto:, livros apostilas; <br />
+        Imagens: Diagramas, Esquemas; <br />
+        Ferramentas <br />
+        Wiki, Chats, Fórum; <br />
+        Estratégias: <br />
+        Professor deve relacionar o conteúdo com algo que seja familiar ao aluno. </div>
+    </div></td>
+    </tr>
+</table>
+</div>
+<div align="center"> <button id="meuBotao" type="button" onclick="motraquestionario()">Voltar</button></div>
+
+
+</div>
+
+</body>
+</html>

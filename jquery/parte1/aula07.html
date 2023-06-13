@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd.">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>JQuery Aula - 07</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!-- <link rel="stylesheet" type="text/css" href="css/imc.css" media="all"/> -->
+		<!-- <script type="text/javascript" 
+		src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
+		<script type="text/javascript" 
+		src="js/jquery-3.7.0.min.js"></script>
+		<script type="text/javascript" src="js/aula07.js"></script>
+		
+	<style>
+		form {
+			width: 300px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		
+
+		input[type="text"],input[type="password"],input[type="file"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+
+		input[type="radio"],input[type="checkbox"] {
+			margin-right: 5px;
+		}
+
+		input[type="submit"],input[type="reset"],
+			button {
+			padding: 10px 20px;
+			background-color: #4caf50;
+			border: none;
+			color: #fff;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		input[type="image"] {
+			border: none;
+		}
+
+		.hidden-input {
+			display: none;
+		}
+
+	</style>
+	
+	</head>
+	<body>
+		<form>
+			<label for="text-input">Text:</label>
+			<input type="text" id="text-input" name="text-input"><br><br>
+
+			<label for="password-input">Password:</label>
+			<input type="password" id="password-input" name="password-input"><br><br>
+
+			<label for="radio-input">Radio:</label>
+			<input type="radio" id="radio-input" name="radio-input" value="radio1">Radio 1
+			<input type="radio" name="radio-input" value="radio2">Radio 2<br><br>
+
+			<label for="checkbox-input">Checkbox:</label>
+			<input type="checkbox" id="checkbox-input" name="checkbox-input" value="checkbox1">Checkbox 1
+			<input type="checkbox" name="checkbox-input" value="checkbox2">Checkbox 2<br><br>
+
+			<label for="select-input">Select:</label>
+				<select id="select-input" name="select-input">
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+			</select>
+			
+			<input type="submit" id="submit-input" name="submit-input" value="Submit"><br><br>
+
+			<input type="image" id="image-input" name="image-input" src="https://www.w3schools.com/images/w3lynx_200.png" style="width: 50px; height: 50px;"><br><br>
+
+			<input type="reset" id="reset-input" name="reset-input" value="Reset"><br><br>
+
+			<button type="button" id="button-input" name="button-input">Button</button><br><br>
+
+			<label for="file-input">File:</label>
+			<input type="file" id="file-input" name="file-input"><br><br>
+			
+			<label for="textarea-input">Textarea:</label>
+			<textarea id="textarea-input" name="textarea-input" rows="4" cols="30"></textarea><br><br>
+
+			<input type="hidden" id="hidden-input" name="hidden-input" value="hidden-value">
+		</form>
+
+
+	</body>
+</html>

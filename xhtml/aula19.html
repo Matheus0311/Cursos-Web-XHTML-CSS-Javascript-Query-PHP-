@@ -1,0 +1,86 @@
+<html lang="pt-br">
+
+	<head>
+		<title>XHTML Aula 19</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	
+	<body style="background-color:#8ecae6">
+	
+		<form action = "aula18.html" method="get">
+		
+			<input type="hidden" id="chave" value="123456789" />
+			
+			<fieldset>
+				<legend>Informações Pessoais</legend>
+				<label for ="nome" >Nome:</label> 
+				<input type="text" id="nome" value="Internauta" readonly="readonly"/> <br><br> 
+				
+				<label for ="senha" >Senha:</label> 
+				<input type="password" id="senha" /> <br><br>
+				
+				Sexo:<br>
+				<input type="radio" name="sexo" value="M"/>Masculino<br>
+				<input type="radio" name="sexo" value="F"/>Feminino<br>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Informações Profissionais</legend>
+				Conhecimentos: <br>
+				<input type="checkbox" name="conhecimentos" value="java" />Java<br>
+				<input type="checkbox" name="conhecimentos" value="html" />HTML<br>
+				<input type="checkbox" name="conhecimentos" value="css" />CSS<br>
+				<input type="checkbox" name="conhecimentos" value="xslt" />XSLT<br><br>
+				
+				Curriculo: <br>
+				<input type="file" id="curriculo" /><br><br>
+				
+				Resumo:<br>
+				<textarea rows="6" cols="40">Escreva o resumo do currículo</textarea>
+				<br>
+			</fieldset>
+			<br>
+			<div style="float:left;">
+				<input type="reset" value="Limpar Marcações" />
+			</div><br><br>
+			
+			País:<br>
+			<select id="pais">
+				<option value="BR">Brasil</option>
+				<option>China</option>
+				<option>Eua</option>
+				<option>Japão</option>
+				<option>Argentina</option>
+			</select>
+			<br><br>
+			
+			Editores ou Navegadores: <br>
+			<select id="en">
+				<optgroup label="Editores">
+					<option>Notepad++</option>
+					<option>DreamWeaver</option>
+					<option>Eclipse</option>
+					<option>HTML-Kit</option>
+				</optgroup>
+				<optgroup label="Navegadores">
+					<option>Firefox</option>
+					<option>IE</option>
+					<option>Safari</option>
+					<option>Opera</option>
+				</optgroup>
+			</select>
+			<br><br>
+			
+			<div style="float:left;">
+				<input type="submit" value="Enviar" />
+			</div>
+				
+			<div style="float:left;">
+				<input type="button" value="Validar Formulário" />
+			</div>
+			<br><br>
+		</form>
+
+	</body>
+
+</html>
